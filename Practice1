@@ -1,0 +1,19 @@
+using System;
+
+namespace Ejercicio_Edad_Marciana
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int EdadTierra = 0, EdadMarciana = 0;
+
+            Console.WriteLine("Ingresa Tu Edad");
+            EdadTierra = int.Parse(Console.ReadLine());
+
+            EdadMarciana = (EdadTierra * 365) / 687;
+
+            Console.WriteLine("Tu edad marciana es: {0}", EdadMarciana);
+        }
+    }
+}
